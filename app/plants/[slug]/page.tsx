@@ -27,13 +27,13 @@ export default async function PlantPage({ params }: PlantProps) {
   const { title, description, price, image } = plant;
 
   return (
-    <div className="flex flex-row justify-center items-center gap-10 p-10 mx-auto">
+    <div className="flex flex-row items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       
       <img src={image} className="max-w-60 rounded-xl" alt={title} />
       <div className="flex flex-col gap-5 max-w-xl">
-        <h1 className="text-3xl">{title}</h1>
-        <p>{description}</p>
-        <p className="text-violet-400 font-semibold ">Price: ${price}</p>
+        <h1 className="text-3xl font-medium text-black">{title}</h1>
+        <p className="text-black">{description}</p>
+        <p className="text-violet-800 font-bold ">Price: ${price}</p>
       </div>
     </div>
   );

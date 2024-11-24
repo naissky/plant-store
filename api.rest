@@ -1,0 +1,1 @@
+GET http://localhost:1337/api/plants?fields=title&fields=description&fields=slug&fields=price&populate[image][fields]=url
